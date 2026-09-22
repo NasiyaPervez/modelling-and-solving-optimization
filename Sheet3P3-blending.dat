@@ -1,0 +1,25 @@
+#Data file for problem 3.3: Note how the index sets BASICS and GAS are defined implicitly in the tables
+
+param: BASICS: wareh cost:=
+1 3000 3
+2 2000 6
+3 4000 4
+4 1000 5;
+
+param: GAS: salesp:=
+A 5.5
+B 4.5
+C 3.5;
+
+param: MAXBLEND: maxbound:=
+A 1 0.3  
+A 3 0.5
+B 1 0.5;
+
+param: MINBLEND: minbound:=
+A 2 0.4
+B 2 0.1
+C 1 0.7;
+
+
+

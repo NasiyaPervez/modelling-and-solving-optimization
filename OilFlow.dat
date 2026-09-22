@@ -1,0 +1,37 @@
+set NODES := s T C A NO CH SE SL PI AL KC SF t; #See the solution for the abbreviations.
+set SOURCESINK := s t; #Alternative: Don't define the artificial nodes s,t and make this set larger.
+
+set ARCS  := (s,T) (s,C) (s,A) 
+	(T,NO) (T,CH) (T,SE) (T,SL) (C,NO) (C,CH) (C,SE) (C,SL) (A,NO) (A,CH) (A,SE) (A,SL) 
+	(NO,PI) (CH,PI) (SE,PI) (SL,PI) (NO,AL) (CH,AL) (SE,AL) (SL,AL) (NO,KC) (CH,KC) (SE,KC) (SL,KC) (NO,SF) (CH,SF) (SE,SF) (SL,SF)
+	(PI,t) (AL,t) (KC,t) (SF,t);
+             
+param: 	capac := #The capacities for all arcs starting in s or ending t are infinity.
+T NO 11
+T CH 7
+T SE 2
+T SL 8
+C NO 5
+C CH 4
+C SE 8
+C SL 7
+A NO 7
+A CH 3
+A SE 12
+A SL 6
+NO PI 5
+NO AL 9
+NO KC 6
+NO SF 4
+CH PI 8
+CH AL 7
+CH KC 9
+CH SF 5
+SE PI 4
+SE AL 6
+SE KC 7
+SE SF 8
+SL PI 12
+SL AL 11
+SL KC 9
+SL SF 7;

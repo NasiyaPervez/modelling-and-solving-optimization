@@ -1,0 +1,8 @@
+param: JOBS: processtime :=  
+	1	100
+	2	80
+	3	70
+	4	40
+	5	30;
+	
+set MACHI = 1, 2;

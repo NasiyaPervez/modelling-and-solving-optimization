@@ -1,0 +1,14 @@
+set V := GT LS MV RV TS SD SP PC RD TB;
+
+param cost:  GT LS MV RV TS SD SP PC RD TB :=
+        GT    .  8  5  9 12 14 12 16 17 22
+        LS    .  .  9 15 17  8 11 18 14 22
+        MV    .  .  .  7  9 11  7 12 12 17
+        RV    .  .  .  .  3 17 10  7 15 18 
+        TS    .  .  .  .  .  8 10  6 15 15
+        SD    .  .  .  .  .  .  9 14  8 16
+        SP    .  .  .  .  .  .  .  8  6 11
+        PC    .  .  .  .  .  .  .  . 11 11
+        RD    .  .  .  .  .  .  .  .  . 10
+        TB    .  .  .  .  .  .  .  .  .  .;
+        
